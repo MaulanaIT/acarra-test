@@ -77,7 +77,7 @@ export default function Home() {
                             <div className='grid grid-cols-2 md:grid-cols-3 gap-3 items-center mt-6 md:mt-10'>
                                 {(listPayment && listPayment?.length > 0) ? listPayment?.map((item, index) => {
                                     return (
-                                        <div key={index} className={`${+getSelectedPayment === +index ? 'border-[#262626] border-[2px] bg-white' : 'bg-[#EDF2F7]'} flex flex-1 font-semibold items-center justify-center py-[18px] rounded-[12px]`} onClick={() => setSelectedPayment(index)}>
+                                        <div key={index} className={`${+getSelectedPayment === +index ? 'border-[#262626] border-[2px] bg-white' : 'bg-[#EDF2F7]'} flex flex-1 font-semibold items-center justify-center px-4 py-[18px] rounded-[12px]`} onClick={() => setSelectedPayment(index)}>
                                             <p className='md:leading-6 text-sm md:text-[18px] text-black text-center'>{item}</p>
                                         </div>
                                     )
@@ -88,7 +88,7 @@ export default function Home() {
                         </div>
                         <div className='flex gap-4 items-center mt-6 md:mt-10 relative'>
                             <input type="checkbox" id='terms-and-condition' />
-                            <label htmlFor='terms-and-condition' className='leading-[22px] text-[#718096] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <span className='text-[#1E21FF] underline'>do eiusmod</span></label>
+                            <label htmlFor='terms-and-condition' className='md:leading-[22px] text-[#718096] text-xs md:text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <span className='cursor-pointer text-[#1E21FF] underline'>do eiusmod</span></label>
                         </div>
                     </div>
                     <div className='border-t-[1px] border-[#D3DEE9] flex items-center justify-between mt-6 md:mt-10 px-6 md:px-10 py-6 md:py-[35px]'>
